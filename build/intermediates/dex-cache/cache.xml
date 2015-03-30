@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-acdcfebe93e72bd232913ccd8c12cc715a23fa78.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-e2e7384d08b18c19caac56543b13ca953401c485.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-5f160c12208bec08345d07095253b2792016bf84.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-063fd307f79e41be29b3c66eaa1974cb7d37dd88.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-15314044f0f4e7b5f9cf203aba6e1308965cc252.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-b009d047bfaf8e96e5e272fd50bbdc672aa4d643.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-a1624b8137c1cd5874e7d32c51024492a249ac7f.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-ef77e14d4054ea5b378811662774c03993249a7e.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-4e3e4184dd1beb8e90090712b8ef0402a072f40f.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-61710e1a3a1f03b06d5b625ed290dc8623e269ad.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/Downloads/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-a0afb07ccdaf8a0b7b38e2363e3c48efe798a191.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-52c80fa7634a90c750fc7e60a038b9454dfd98f0.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-a833cb0e7782f5142810a5cf473b15729512e9f5.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-6382e03b1af8745be66b388014887dbf9bfcc426.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-719fee39fcafc7fadb61e7910602a9fa03c1bdd3.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-c8de2da9331d7f98888a05e0be16770a5c4948ab.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-b2655450afcbf5cafd0b60a5c65a0cc9ae3b89ee.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-9ab7bcdaf43837e588e4848b5952b08bbb986e10.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-feac6ae01119ec83c79496b8ad1270f5e8a2481c.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-71a663b8e6b858154b92782c7591ca4c5282e145.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-d1894e89b111ff43560d10522f565ab6ec0e7ddf.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-2f8ba0f38ff6aeb985254edfd4b1c3ea565cd91f.jar" />
+    </item>
+    <item
+        jar="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Users/Afton/AndroidStudioProjects/CometRadarDriver/app/build/intermediates/pre-dexed/debug/classes-8b304f24ea9210f3d67ec6f80bb996b3cec8ac3f.jar" />
+    </item>
+
+</items>
