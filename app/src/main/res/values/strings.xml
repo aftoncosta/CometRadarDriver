@@ -9,7 +9,8 @@
     <string name="minus">-</string>
     <string-array name="routes">
         <item>Select route</item>
-        <item>University Village Phase 1</item>
+        <item>University Village Phase 1 and 2</item>
+        <item>University Village Phase 5 and 6</item>
         <item>University Commons</item>
         <item>McDermott Library</item>
         <item>Rutford Avenue North-South</item>
