@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.content.Context;
 import android.content.Intent;
 import android.content.CursorLoader;
 import android.content.Loader;
@@ -27,7 +28,19 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 
@@ -52,6 +65,9 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        new PopulateRoutesTask() {}.execute(); // start the background processing
+
+
 
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -307,6 +323,65 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             showProgress(false);
         }
     }
+
+    class PopulateRoutesTask extends AsyncTask<String, String, String> {
+
+        String jsonString = "";
+
+        public PopulateRoutesTask() {
+            super();
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            String getRoutes = "http://104.197.3.201:3000/route-names";
+            URL url = null;
+
+            try {
+                url = new URL(getRoutes);
+
+                BufferedInputStream bis = new BufferedInputStream(url.openStream());
+                byte[] buffer = new byte[1024];
+                StringBuilder sb = new StringBuilder();
+                int bytesRead = 0;
+                while((bytesRead = bis.read(buffer)) > 0) {
+                    String text = new String(buffer, 0, bytesRead);
+                    sb.append(text);
+                }
+                bis.close();
+                jsonString = sb.toString();
+
+                return jsonString;
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return "";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            JSONArray routesArray;
+            ArrayList<String> routes = new ArrayList<String>();
+
+            try {
+                routesArray = new JSONArray(jsonString);
+                for(int i = 0; i < routesArray.length(); i++){
+                    routes.add(routesArray.getJSONObject(i).getString("route_name"));
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getBaseContext(), android.R.layout.simple_spinner_item, routes);
+
+            Spinner routeDropdown = (Spinner)findViewById(R.id.spinner);
+            routeDropdown.setAdapter(adapter);
+
+        }
+    }
+
 }
 
 

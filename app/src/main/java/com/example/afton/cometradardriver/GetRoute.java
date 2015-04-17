@@ -22,10 +22,12 @@ public class GetRoute extends AsyncTask<Void, Void, String> {
     String jsonString = "";
     ArrayList<LatLng> poly = new ArrayList<LatLng>();
     MapsActivity ma;
+    LatLng[] waypoints;
 
-    public GetRoute(MapsActivity mAct) {
+    public GetRoute(MapsActivity mAct, LatLng[] waypoints) {
         super();
         ma = mAct;
+        this.waypoints = waypoints;
     }
 
     @Override
@@ -57,21 +59,24 @@ public class GetRoute extends AsyncTask<Void, Void, String> {
     private URL getURL(){
         try {
 
-            ////////////////////////////////////////////////////////////////////////////////////////////////////
-            ///////////////////////////////// DATA TO BE GRABBED FROM DB ///////////////////////////////////////
-            ////////////////////////////////////////////////////////////////////////////////////////////////////
-            // TODO: The String variable "ma.routeName" has the name of the route... use this to grab from DB //
-            ////////////////////////////////////////////////////////////////////////////////////////////////////
+//            double originLat = 32.9856748;
+//            double originLong = -96.75524339999998;
+//            double destinationLat = 32.9855582;
+//            double destinationLong = -96.7499986;
+//            double[] waypointsLat = {32.9837381, 32.9837774, 32.9855606, 32.9856448};
+//            double[] waypointsLong = {-96.7544246, -96.75588640000001, -96.75002030000002, -96.74969579999998};
 
-            double originLat = 32.9856748;
-            double originLong = -96.75524339999998;
-            double destinationLat = 32.9855582;
-            double destinationLong = -96.7499986;
-            double[] waypointsLat = {32.9837381, 32.9837774, 32.9855606, 32.9856448};
-            double[] waypointsLong = {-96.7544246, -96.75588640000001, -96.75002030000002, -96.74969579999998};
+            double originLat = waypoints[0].latitude;
+            double originLong = waypoints[0].longitude;
+            double destinationLat = waypoints[waypoints.length-1].latitude;
+            double destinationLong = waypoints[waypoints.length-1].longitude;
 
-            ////////////////////////////////////////////////////////////////////////////////////////////////////
-            ////////////////////////////////////////////////////////////////////////////////////////////////////
+            double[] waypointsLat = new double[waypoints.length-2];
+            double[] waypointsLong =  new double[waypoints.length-2];
+            for(int i = 1; i < waypoints.length-1; i++){
+                waypointsLat[i-1] = waypoints[i].latitude;
+                waypointsLong[i-1] = waypoints[i].longitude;
+            }
 
             String url = "https://maps.googleapis.com/maps/api/directions/json?origin="
                     + originLat + ","
@@ -91,8 +96,6 @@ public class GetRoute extends AsyncTask<Void, Void, String> {
         }
         return null;
     }
-
-
 
     @Override
     protected void onPostExecute(String result){
@@ -119,20 +122,20 @@ public class GetRoute extends AsyncTask<Void, Void, String> {
                 .width(8)
                 .color(Color.BLUE));
 
+
         /* Uncomment this section when ready to test cart tracking
             DO NOT uncomment until then. I accidentally left the emulator open with this running
             and quickly used up my Google Directions API daily quota (2,500 calls)... so yeah.
-
-
-        while(true){
-            ma.updatePickupAndCartLocations();
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
         */
+//
+//        while(true){
+//            ma.updatePickupAndCartLocations();
+//            try {
+//                Thread.sleep(5000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
     private List<LatLng> decodePoly(String encoded) {
@@ -167,4 +170,5 @@ public class GetRoute extends AsyncTask<Void, Void, String> {
 
         return poly;
     }
+
 }

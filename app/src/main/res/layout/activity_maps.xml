@@ -26,10 +26,12 @@
             android:text="@string/minus"
             android:textSize="35sp"
             android:background="#008542"
-            android:textColor="#fff" />
+            android:textColor="#fff"
+            android:clickable="true"
+            android:onClick="decrementRiders" />
 
         <Button
-            android:id="@+id/pickUpButton"
+            android:id="@+id/riderCountButton"
             android:layout_width="93dp"
             android:layout_height="60dp"
             android:text="@string/riderCount"
@@ -45,7 +47,10 @@
             android:text="@string/plus"
             android:textSize="35sp"
             android:background="#008542"
-            android:textColor="#fff" />
+            android:textColor="#fff"
+            android:clickable="true"
+            android:elegantTextHeight="false"
+            android:onClick="incrementRiders" />
 
     </LinearLayout>
 
