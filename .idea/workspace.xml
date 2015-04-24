@@ -18,11 +18,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="933d44b1-e27d-4672-ab7a-be33501ed737" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/MapsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/MapsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CometRadarDriver.iws" />
@@ -59,58 +57,45 @@
       <file leaf-file-name="MapsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/MapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1267" max-vertical-offset="8704">
-              <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
+            <state vertical-scroll-proportion="-10.357142" vertical-offset="8159" max-vertical-offset="10829">
+              <caret line="529" column="53" selection-start-line="529" selection-start-column="53" selection-end-line="529" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-                <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-                <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-                <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4259681" vertical-offset="2652" max-vertical-offset="4743">
-              <caret line="284" column="48" selection-start-line="284" selection-start-column="48" selection-end-line="284" selection-end-column="48" />
+            <state vertical-scroll-proportion="-36.892857" vertical-offset="3047" max-vertical-offset="4777">
+              <caret line="320" column="66" selection-start-line="320" selection-start-column="66" selection-end-line="320" selection-end-column="66" />
               <folding>
-                <element signature="e#2364#2725#0" expanded="true" />
-                <element signature="e#2714#2715#0" expanded="true" />
+                <element signature="e#2363#2724#0" expanded="true" />
+                <element signature="e#2713#2714#0" expanded="true" />
                 <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
-                <element signature="method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#4429#4471#0" expanded="true" />
+                <element signature="e#4667#4707#0" expanded="true" />
+                <element signature="e#4848#4887#0" expanded="true" />
+                <element signature="e#5566#5567#0" expanded="true" />
+                <element signature="e#5610#5611#0" expanded="true" />
+                <element signature="method#onLoadFinished#0;class#LoginActivity#0" expanded="false" />
+                <element signature="method#onLoaderReset#0;class#LoginActivity#0" expanded="false" />
+                <element signature="class#ProfileQuery#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#12166#12210#0" expanded="true" />
+                <element signature="class#PopulateRoutesTask#0;class#LoginActivity#0" expanded="false" />
+                <element signature="e#12564#12565#0" expanded="true" />
+                <element signature="e#12595#12596#0" expanded="true" />
+                <element signature="e#13766#13774#0" expanded="true" />
+                <element signature="e#14172#14180#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_login.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1326">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1088">
-              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_maps.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity_maps.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
@@ -1862,12 +1847,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/GcmBroadcastReceiver.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/GcmIntentService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/GetRoute.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/MapsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/MapsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
       </list>
     </option>
   </component>
@@ -2441,11 +2426,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45300463" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2455,7 +2441,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58784896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23316912" sideWeight="0.4341142" order="12" side_tool="false" content_ui="tabs" x="-65" y="62" width="1358" height="580" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2676519" sideWeight="0.4341142" order="12" side_tool="false" content_ui="tabs" x="-65" y="62" width="1358" height="580" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2306003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2468,7 +2454,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45300463" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2496,19 +2481,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="6698">
-          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-          <folding>
-            <element signature="e#2364#2725#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
-            <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
-            <element signature="method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
@@ -2553,10 +2525,7 @@
           <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2566,10 +2535,23 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="6698">
           <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
           <folding>
-            <element signature="e#2364#2725#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="e#2363#2724#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
             <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
-            <element signature="method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#4429#4471#0" expanded="true" />
+            <element signature="e#4667#4707#0" expanded="true" />
+            <element signature="e#4848#4887#0" expanded="true" />
+            <element signature="e#5566#5567#0" expanded="true" />
+            <element signature="e#5610#5611#0" expanded="true" />
+            <element signature="method#onLoadFinished#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onLoaderReset#0;class#LoginActivity#0" expanded="false" />
+            <element signature="class#ProfileQuery#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#12166#12210#0" expanded="true" />
+            <element signature="class#PopulateRoutesTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#12564#12565#0" expanded="true" />
+            <element signature="e#12595#12596#0" expanded="true" />
+            <element signature="e#13766#13774#0" expanded="true" />
+            <element signature="e#14172#14180#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2610,10 +2592,7 @@
           <caret line="293" column="40" selection-start-line="293" selection-start-column="40" selection-end-line="293" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2623,10 +2602,23 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6749">
           <caret line="373" column="58" selection-start-line="373" selection-start-column="58" selection-end-line="373" selection-end-column="58" />
           <folding>
-            <element signature="e#2364#2725#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="e#2363#2724#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
             <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
-            <element signature="method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#4429#4471#0" expanded="true" />
+            <element signature="e#4667#4707#0" expanded="true" />
+            <element signature="e#4848#4887#0" expanded="true" />
+            <element signature="e#5566#5567#0" expanded="true" />
+            <element signature="e#5610#5611#0" expanded="true" />
+            <element signature="method#onLoadFinished#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onLoaderReset#0;class#LoginActivity#0" expanded="false" />
+            <element signature="class#ProfileQuery#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#12166#12210#0" expanded="true" />
+            <element signature="class#PopulateRoutesTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#12564#12565#0" expanded="true" />
+            <element signature="e#12595#12596#0" expanded="true" />
+            <element signature="e#13766#13774#0" expanded="true" />
+            <element signature="e#14172#14180#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2664,10 +2656,7 @@
           <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2686,10 +2675,7 @@
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2715,10 +2701,7 @@
           <caret line="162" column="51" selection-start-line="162" selection-start-column="48" selection-end-line="162" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2737,10 +2720,7 @@
           <caret line="307" column="20" selection-start-line="307" selection-start-column="20" selection-end-line="307" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2759,10 +2739,7 @@
           <caret line="352" column="5" selection-start-line="352" selection-start-column="5" selection-end-line="352" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2907,29 +2884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/GetRoute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="3043">
           <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1088">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -2939,6 +2897,33 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="459">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44311377" vertical-offset="56" max-vertical-offset="1088">
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="86212" max-vertical-offset="86411">
+          <caret line="5261" column="0" selection-start-line="5261" selection-start-column="0" selection-end-line="5261" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/MapsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.357142" vertical-offset="8159" max-vertical-offset="10829">
+          <caret line="529" column="53" selection-start-line="529" selection-start-column="53" selection-end-line="529" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onConnectionFailed#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2953,31 +2938,41 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/MapsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1267" max-vertical-offset="8704">
-          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
+        <state vertical-scroll-proportion="-36.892857" vertical-offset="3047" max-vertical-offset="4777">
+          <caret line="320" column="66" selection-start-line="320" selection-start-column="66" selection-end-line="320" selection-end-column="66" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onLocationChanged#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#apiRequest#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#write#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
-            <element signature="method#cancel#0;class#ConnectedThread#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#2363#2724#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
+            <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#4429#4471#0" expanded="true" />
+            <element signature="e#4667#4707#0" expanded="true" />
+            <element signature="e#4848#4887#0" expanded="true" />
+            <element signature="e#5566#5567#0" expanded="true" />
+            <element signature="e#5610#5611#0" expanded="true" />
+            <element signature="method#onLoadFinished#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#onLoaderReset#0;class#LoginActivity#0" expanded="false" />
+            <element signature="class#ProfileQuery#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#12166#12210#0" expanded="true" />
+            <element signature="class#PopulateRoutesTask#0;class#LoginActivity#0" expanded="false" />
+            <element signature="e#12564#12565#0" expanded="true" />
+            <element signature="e#12595#12596#0" expanded="true" />
+            <element signature="e#13766#13774#0" expanded="true" />
+            <element signature="e#14172#14180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/afton/cometradardriver/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4259681" vertical-offset="2652" max-vertical-offset="4743">
-          <caret line="284" column="48" selection-start-line="284" selection-start-column="48" selection-end-line="284" selection-end-column="48" />
-          <folding>
-            <element signature="e#2364#2725#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
-            <element signature="docComment;method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
-            <element signature="method#attemptLogin#0;class#LoginActivity#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

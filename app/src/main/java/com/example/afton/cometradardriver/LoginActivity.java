@@ -69,7 +69,6 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         new PopulateRoutesTask() {}.execute(); // start the background processing
 
 
-
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
@@ -160,7 +159,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             // perform the user login attempt.
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
-            mAuthTask.execute((Void) null);
+            mAuthTask.execute();
 
         }
     }
@@ -170,7 +169,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     }
 
     private boolean isPasswordValid(String password) {
-        return password.length() > 8;
+        return password.length() > 2;
     }
 
     /**
@@ -267,7 +266,9 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
      * Represents an asynchronous login/registration task used to authenticate
      * the user.
      */
-    public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
+    public class UserLoginTask extends AsyncTask<String, String, String> {
+
+        String jsonString = "";
 
         private final String mEmail;
         private final String mPassword;
@@ -278,40 +279,61 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         }
 
         @Override
-        protected Boolean doInBackground(Void... params) {
-            ////////////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////////////// DATA TO CHECK FROM DB //////////////////////////////////
-            ////////////////////////////////////////////////////////////////////////////////////////////
-            //////////// TODO: Use variables "mEMail" and "mPassword" to check credentials /////////////
-            ////////////////////////////////////////////////////////////////////////////////////////////
-            boolean isValidCredentials = true;
-            ////////////////////////////////////////////////////////////////////////////////////////////
-            ////////////////////////////////////////////////////////////////////////////////////////////
+        protected String doInBackground(String... params) {
+            Spinner spinner = (Spinner)findViewById(R.id.spinner);
+            String routeName = spinner.getSelectedItem().toString();
+            Spinner spinner2 = (Spinner)findViewById(R.id.spinner2);
+            String shuttleNumber = spinner2.getSelectedItem().toString();
 
-            if (isValidCredentials){
-                Spinner spinner = (Spinner)findViewById(R.id.spinner);
-                String routeName = spinner.getSelectedItem().toString();
+            String getRoutes = "http://104.197.3.201:3000/api/createCurrentRoute?email=" + Uri.encode(mEmail) + "&password=" + Uri.encode(mPassword)
+                    + "&rname=" + Uri.encode(routeName) + "&shuttle=" + Uri.encode(shuttleNumber);
+            URL url = null;
 
+            Log.i("loginAsync", getRoutes);
+            try {
+                url = new URL(getRoutes);
+
+                BufferedInputStream bis = new BufferedInputStream(url.openStream());
+                byte[] buffer = new byte[1024];
+                StringBuilder sb = new StringBuilder();
+                int bytesRead = 0;
+                while((bytesRead = bis.read(buffer)) > 0) {
+                    String text = new String(buffer, 0, bytesRead);
+                    sb.append(text);
+                }
+                bis.close();
+                jsonString = sb.toString();
+
+                Log.i("loginActivity", "sending spinner request");
+                return jsonString;
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return "";
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+
+            Spinner spinner = (Spinner)findViewById(R.id.spinner);
+            String routeName = spinner.getSelectedItem().toString();
+            Spinner spinner2 = (Spinner)findViewById(R.id.spinner2);
+            String shuttleNumber = spinner2.getSelectedItem().toString();
+
+            Log.i("loginTask", jsonString);
+            mAuthTask = null;
+            showProgress(false);
+            if (jsonString.equals("success")){
                 Bundle bundle = new Bundle();
                 bundle.putString("route", routeName);
                 bundle.putString("email", mEmail);
+                bundle.putString("shuttle", shuttleNumber);
 
                 Intent myIntent = new Intent(LoginActivity.this, MapsActivity.class);
                 myIntent.putExtras(bundle);
                 LoginActivity.this.startActivity(myIntent);
 
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        @Override
-        protected void onPostExecute(final Boolean success) {
-            mAuthTask = null;
-            showProgress(false);
-
-            if (success) {
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
@@ -385,7 +407,6 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
         }
     }
-
 }
 
 

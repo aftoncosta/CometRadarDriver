@@ -93,7 +93,7 @@ public class MapsActivity extends FragmentActivity implements
             "http://104.197.3.201:3000/api/updateRiderCount";
 
     private static boolean driverUpdatedDutyStatus = false;
-    BluetoothAdapter mBluetoothAdapter;
+//    BluetoothAdapter mBluetoothAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +104,7 @@ public class MapsActivity extends FragmentActivity implements
         email = bundle.getString("email");
 
         setUpMapIfNeeded();
-        startBluetooth();
+//        startBluetooth();
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -119,85 +119,85 @@ public class MapsActivity extends FragmentActivity implements
                 .setSmallestDisplacement(0);
     }
 
-    private void turnOnBT(){
-        Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-        startActivityForResult(intent, 1);
-    }
+//    private void turnOnBT(){
+//        Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//        startActivityForResult(intent, 1);
+//    }
 
     /**
      * sets up bluetooth
      */
-    Set<BluetoothDevice> devicesArray;
-    ArrayList<String> pairedDevices = new ArrayList<String>();
-    IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
-    BroadcastReceiver receiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-
-            if(BluetoothDevice.ACTION_FOUND.equals(action)){
-                BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                Log.i("broadcast receiver", "new device: " + device.getName() + "\n" + device.getAddress());
-
-                String s = "";
-                for(int i = 0; i < pairedDevices.size(); i++){
-                    if(device.getName().equals(pairedDevices.get(i))){
-                        s = "(PAIRED)";
-                        Log.i("receiver.onReceive", "found new bt device " + device.getName());
-                        break;
-                    }
-                }
-
-            }else if(BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)){
-
-            }else if(BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)){
-
-            }else if(BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)){
-                if(mBluetoothAdapter.getState() == mBluetoothAdapter.STATE_OFF){
-                    turnOnBT();
-                }
-            }
-        }
-    };
-    private void startBluetooth(){
-
-        registerReceiver(receiver, filter);
-        IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_STARTED);
-        registerReceiver(receiver, filter);
-        filter = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
-        registerReceiver(receiver, filter);
-        filter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
-        registerReceiver(receiver, filter);
-
-        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (mBluetoothAdapter == null) {
-            Log.e("MapsActivity", "device does not support bluetooth");
-        }
-
-        if (!mBluetoothAdapter.isEnabled()) {
-            turnOnBT();
-        }
-
-        getPairedDevices();
-        startDiscovery();
-
-        (new AcceptThread()).run();
-
-    }
-
-    private void startDiscovery() {
-        mBluetoothAdapter.cancelDiscovery();
-        mBluetoothAdapter.startDiscovery();
-    }
-
-    private void getPairedDevices(){
-        devicesArray = mBluetoothAdapter.getBondedDevices();
-        if(devicesArray.size() > 0){
-            for(BluetoothDevice d : devicesArray){
-                Log.i("getPairedDevices", d.getName() + "\n" + d.getAddress());
-            }
-        }
-    }
+//    Set<BluetoothDevice> devicesArray;
+//    ArrayList<String> pairedDevices = new ArrayList<String>();
+//    IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
+//    BroadcastReceiver receiver = new BroadcastReceiver() {
+//        @Override
+//        public void onReceive(Context context, Intent intent) {
+//            String action = intent.getAction();
+//
+//            if(BluetoothDevice.ACTION_FOUND.equals(action)){
+//                BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+//                Log.i("broadcast receiver", "new device: " + device.getName() + "\n" + device.getAddress());
+//
+//                String s = "";
+//                for(int i = 0; i < pairedDevices.size(); i++){
+//                    if(device.getName().equals(pairedDevices.get(i))){
+//                        s = "(PAIRED)";
+//                        Log.i("receiver.onReceive", "found new bt device " + device.getName());
+//                        break;
+//                    }
+//                }
+//
+//            }else if(BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)){
+//
+//            }else if(BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)){
+//
+//            }else if(BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)){
+//                if(mBluetoothAdapter.getState() == mBluetoothAdapter.STATE_OFF){
+//                    turnOnBT();
+//                }
+//            }
+//        }
+//    };
+//    private void startBluetooth(){
+//
+//        registerReceiver(receiver, filter);
+//        IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_STARTED);
+//        registerReceiver(receiver, filter);
+//        filter = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
+//        registerReceiver(receiver, filter);
+//        filter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
+//        registerReceiver(receiver, filter);
+//
+//        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+//        if (mBluetoothAdapter == null) {
+//            Log.e("MapsActivity", "device does not support bluetooth");
+//        }
+//
+//        if (!mBluetoothAdapter.isEnabled()) {
+//            turnOnBT();
+//        }
+//
+//        getPairedDevices();
+//        startDiscovery();
+//
+//        (new AcceptThread()).run();
+//
+//    }
+//
+//    private void startDiscovery() {
+//        mBluetoothAdapter.cancelDiscovery();
+//        mBluetoothAdapter.startDiscovery();
+//    }
+//
+//    private void getPairedDevices(){
+//        devicesArray = mBluetoothAdapter.getBondedDevices();
+//        if(devicesArray.size() > 0){
+//            for(BluetoothDevice d : devicesArray){
+//                Log.i("getPairedDevices", d.getName() + "\n" + d.getAddress());
+//            }
+//        }
+//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -345,7 +345,7 @@ public class MapsActivity extends FragmentActivity implements
     @Override
     protected void onPause() {
         super.onPause();
-        unregisterReceiver(receiver);
+//        unregisterReceiver(receiver);
         if (mGoogleApiClient.isConnected()) {
             LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
             mGoogleApiClient.disconnect();
@@ -488,10 +488,12 @@ public class MapsActivity extends FragmentActivity implements
 
                         //add new rider pickup locations to map
                         for (LatLng pickupLoc : pickupLocations) {
-                            pickupMarkers.add(
+                            if(measure(userLocation.latitude, userLocation.longitude, pickupLoc.latitude, pickupLoc.longitude) > 5){
+                                pickupMarkers.add(
                                     mMap.addMarker(new MarkerOptions()
                                             .position(pickupLoc)
                                             .icon(BitmapDescriptorFactory.fromResource(R.mipmap.person))));
+                            }
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -522,127 +524,139 @@ public class MapsActivity extends FragmentActivity implements
                     }catch (JSONException e) {
                         e.printStackTrace();
                     }
-                }else if(method.equals("gds")){ //get the duty status on the server
-                    if(!driverUpdatedDutyStatus){
-                        try {
-                            routesArray = new JSONArray(jsonString);
-                            isOnDuty = routesArray.getJSONObject(0).getBoolean("onduty");
-                        }catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
+//                }else if(method.equals("gds")){ //get the duty status on the server
+//                    if(!driverUpdatedDutyStatus){
+//                        try {
+//                            routesArray = new JSONArray(jsonString);
+//                            isOnDuty = routesArray.getJSONObject(0).getBoolean("onduty");
+//                        }catch (JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
                 }
         }
     }
 
-    private class AcceptThread extends Thread {
-        private final BluetoothServerSocket mmServerSocket;
+//    private class AcceptThread extends Thread {
+//        private final BluetoothServerSocket mmServerSocket;
+//
+//        public AcceptThread() {
+//            // Use a temporary object that is later assigned to mmServerSocket,
+//            // because mmServerSocket is final
+//            BluetoothServerSocket tmp = null;
+//            try {
+//                // MY_UUID is the app's UUID string, also used by the client code
+//                tmp = mBluetoothAdapter.listenUsingRfcommWithServiceRecord("Comet Radar Driver", UUID.fromString("79812711-7b33-40c2-962f-9a191bcfd73b"));
+//            } catch (IOException e) {
+//                Log.e("Accept Thread", e.toString());
+//                e.printStackTrace();
+//            }
+//            mmServerSocket = tmp;
+//        }
+//
+//        public void run() {
+//            BluetoothSocket socket = null;
+//            // Keep listening until exception occurs or a socket is returned
+//            while (true) {
+//                try {
+//                    Log.d("Accept Thread", "running");
+//                    socket = mmServerSocket.accept();
+//
+//                    // If a connection was accepted
+//                    if (socket != null) {
+//                        Log.d("Accept Thread", "spinning off child process to manage connection");
+//                        // Do work to manage the connection (in a separate thread)
+//                        (new ConnectedThread(socket)).run();
+//                        mmServerSocket.close();
+//                        break;
+//                    }
+//                } catch (IOException e) {
+//                    break;
+//                }
+//            }
+//        }
+//
+//        /** Will cancel the listening socket, and cause the thread to finish */
+//        public void cancel() {
+//            Log.d("Accept Thread", "canceling");
+//            try {
+//                mmServerSocket.close();
+//            } catch (IOException e) { }
+//        }
+//    }
 
-        public AcceptThread() {
-            // Use a temporary object that is later assigned to mmServerSocket,
-            // because mmServerSocket is final
-            BluetoothServerSocket tmp = null;
-            try {
-                // MY_UUID is the app's UUID string, also used by the client code
-                tmp = mBluetoothAdapter.listenUsingRfcommWithServiceRecord("Comet Radar Driver", UUID.fromString("79812711-7b33-40c2-962f-9a191bcfd73b"));
-            } catch (IOException e) {
-                Log.e("Accept Thread", e.toString());
-                e.printStackTrace();
-            }
-            mmServerSocket = tmp;
-        }
+//    private class ConnectedThread extends Thread {
+//        private final BluetoothSocket mmSocket;
+//        private final InputStream mmInStream;
+//        private final OutputStream mmOutStream;
+//
+//        public ConnectedThread(BluetoothSocket socket) {
+//            mmSocket = socket;
+//            InputStream tmpIn = null;
+//            OutputStream tmpOut = null;
+//
+//            // Get the input and output streams, using temp objects because
+//            // member streams are final
+//            try {
+//                tmpIn = socket.getInputStream();
+//                tmpOut = socket.getOutputStream();
+//            } catch (IOException e) { }
+//
+//            mmInStream = tmpIn;
+//            mmOutStream = tmpOut;
+//            Log.d("Connected Thread", "constructor finished");
+//        }
+//
+//        public void run() {
+//            Log.d("Connected Thread", "running");
+//            byte[] buffer = new byte[1024];  // buffer store for the stream
+//            int bytes; // bytes returned from read()
+//
+//            // Keep listening to the InputStream until an exception occurs
+//            while (true) {
+//                try {
+//                    // Read from the InputStream
+//                    bytes = mmInStream.read(buffer);
+//                    // Send the obtained bytes to the UI activity
+//                    //TODO use info
+//                    StringBuilder s = new StringBuilder();
+//                    for(int i = 0; i < bytes; i++){
+//                        s.append((char)buffer[i]);
+//                    }
+//                    Log.i("bt: Connected Thread", s.toString());
+////                    mHandler.obtainMessage(MESSAGE_READ, bytes, -1, buffer)
+////                            .sendToTarget();
+//                } catch (IOException e) {
+//                    break;
+//                }
+//            }
+//        }
+//
+//        /* Call this from the main activity to send data to the remote device */
+//        public void write(byte[] bytes) {
+//            try {
+//                mmOutStream.write(bytes);
+//            } catch (IOException e) { }
+//        }
+//
+//        /* Call this from the main activity to shutdown the connection */
+//        public void cancel() {
+//            try {
+//                mmSocket.close();
+//            } catch (IOException e) { }
+//        }
+//    }
 
-        public void run() {
-            BluetoothSocket socket = null;
-            // Keep listening until exception occurs or a socket is returned
-            while (true) {
-                try {
-                    Log.d("Accept Thread", "running");
-                    socket = mmServerSocket.accept();
-
-                    // If a connection was accepted
-                    if (socket != null) {
-                        Log.d("Accept Thread", "spinning off child process to manage connection");
-                        // Do work to manage the connection (in a separate thread)
-                        (new ConnectedThread(socket)).run();
-                        mmServerSocket.close();
-                        break;
-                    }
-                } catch (IOException e) {
-                    break;
-                }
-            }
-        }
-
-        /** Will cancel the listening socket, and cause the thread to finish */
-        public void cancel() {
-            Log.d("Accept Thread", "canceling");
-            try {
-                mmServerSocket.close();
-            } catch (IOException e) { }
-        }
-    }
-
-    private class ConnectedThread extends Thread {
-        private final BluetoothSocket mmSocket;
-        private final InputStream mmInStream;
-        private final OutputStream mmOutStream;
-
-        public ConnectedThread(BluetoothSocket socket) {
-            mmSocket = socket;
-            InputStream tmpIn = null;
-            OutputStream tmpOut = null;
-
-            // Get the input and output streams, using temp objects because
-            // member streams are final
-            try {
-                tmpIn = socket.getInputStream();
-                tmpOut = socket.getOutputStream();
-            } catch (IOException e) { }
-
-            mmInStream = tmpIn;
-            mmOutStream = tmpOut;
-            Log.d("Connected Thread", "constructor finished");
-        }
-
-        public void run() {
-            Log.d("Connected Thread", "running");
-            byte[] buffer = new byte[1024];  // buffer store for the stream
-            int bytes; // bytes returned from read()
-
-            // Keep listening to the InputStream until an exception occurs
-            while (true) {
-                try {
-                    // Read from the InputStream
-                    bytes = mmInStream.read(buffer);
-                    // Send the obtained bytes to the UI activity
-                    //TODO use info
-                    StringBuilder s = new StringBuilder();
-                    for(int i = 0; i < bytes; i++){
-                        s.append((char)buffer[i]);
-                    }
-                    Log.i("bt: Connected Thread", s.toString());
-//                    mHandler.obtainMessage(MESSAGE_READ, bytes, -1, buffer)
-//                            .sendToTarget();
-                } catch (IOException e) {
-                    break;
-                }
-            }
-        }
-
-        /* Call this from the main activity to send data to the remote device */
-        public void write(byte[] bytes) {
-            try {
-                mmOutStream.write(bytes);
-            } catch (IOException e) { }
-        }
-
-        /* Call this from the main activity to shutdown the connection */
-        public void cancel() {
-            try {
-                mmSocket.close();
-            } catch (IOException e) { }
-        }
+    public double measure(double lat1, double lon1, double lat2, double lon2){  // generally used geo measurement function
+        double R = 6378.137; // Radius of earth in KM
+        double dLat = (lat2 - lat1) * Math.PI / 180;
+        double dLon = (lon2 - lon1) * Math.PI / 180;
+        double a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                        Math.sin(dLon/2) * Math.sin(dLon/2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        double d = R * c;
+        return d * 1000; // meters
     }
 
 }
