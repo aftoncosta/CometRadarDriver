@@ -17,6 +17,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -293,6 +294,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
                 Bundle bundle = new Bundle();
                 bundle.putString("route", routeName);
+                bundle.putString("email", mEmail);
 
                 Intent myIntent = new Intent(LoginActivity.this, MapsActivity.class);
                 myIntent.putExtras(bundle);
@@ -351,6 +353,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
                 bis.close();
                 jsonString = sb.toString();
 
+                Log.i("loginActivity", "sending spinner request");
                 return jsonString;
 
             } catch (IOException e) {
@@ -361,6 +364,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
         @Override
         protected void onPostExecute(String result) {
+            Log.i("loginActivity", "filling spinner items");
 
             JSONArray routesArray;
             ArrayList<String> routes = new ArrayList<String>();
