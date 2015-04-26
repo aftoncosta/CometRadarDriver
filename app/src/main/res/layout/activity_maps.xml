@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
@@ -6,17 +6,22 @@
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="460dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/map"
         tools:context=".MapsActivity"
-        android:name="com.google.android.gms.maps.SupportMapFragment" />
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
 
 
         <Button
@@ -25,10 +30,13 @@
             android:layout_height="60dp"
             android:text="@string/minus"
             android:textSize="35sp"
-            android:background="#008542"
             android:textColor="#fff"
             android:clickable="true"
-            android:onClick="decrementRiders" />
+            android:onClick="decrementRiders"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp" />
 
         <Button
             android:id="@+id/riderCountButton"
@@ -36,9 +44,12 @@
             android:layout_height="60dp"
             android:text="@string/riderCount"
             android:textSize="35sp"
-            android:background="#008542"
             android:textColor="#fff"
-            android:layout_weight="1.10" />
+            android:layout_weight="1.10"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button" />
 
         <Button
             android:id="@+id/button"
@@ -46,12 +57,15 @@
             android:layout_height="60dp"
             android:text="@string/plus"
             android:textSize="35sp"
-            android:background="#008542"
             android:textColor="#fff"
             android:clickable="true"
             android:elegantTextHeight="false"
-            android:onClick="incrementRiders" />
+            android:onClick="incrementRiders"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

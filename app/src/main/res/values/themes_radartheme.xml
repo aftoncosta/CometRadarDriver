@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="RadarTheme" parent="@style/_RadarTheme"/>
+
+  <style name="_RadarTheme" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextStyle">@style/EditTextRadarTheme</item>
+
+    <item name="android:textColorHighlight">#99008542</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonRadarTheme</item>
+
+    <item name="android:buttonStyle">@style/ButtonRadarTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonRadarTheme</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerRadarTheme</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemRadarTheme</item>
+
+    <item name="android:listViewStyle">@style/ListViewRadarTheme</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewRadarTheme.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemRadarTheme</item>
+
+  </style>
+
+</resources>

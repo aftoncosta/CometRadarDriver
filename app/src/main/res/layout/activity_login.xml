@@ -7,6 +7,7 @@
     android:paddingTop="@dimen/activity_vertical_margin" tools:context=".LoginActivity">
 
     <!-- Login progress -->
+
     <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_marginBottom="8dp" android:visibility="gone" />
@@ -17,6 +18,13 @@
 
         <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@mipmap/logo" />
 
             <AutoCompleteTextView android:id="@+id/email" android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:hint="@string/prompt_email"
